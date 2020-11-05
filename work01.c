@@ -10,19 +10,20 @@
 
 int main(int argc, const char * argv[]) {
     // 12321
-    int n,i,j,k,p,q;
+    int n,i,j;
     scanf("%d",&n);
     for (i=1; i<=n; i++) {
-        for (p=1; p<=n-i; p++) {
+        for (j=1; j<=n-i; j++) {
             printf("*");
         }
-        for (j=i; j<=2*i-1; j++) {
+        for (j=i; j<2*i-1; j++) {
             printf("%d",j);
         }
-        for (k=2*i-2;k>=i; k--) {
-            printf("%d",k);
+        printf("%d",j);
+        for (j=2*i-2;j>=i; j--) {
+            printf("%d",j);
         }
-        for (p=1; p<=n-i; p++) {
+        for (j=1; j<=n-i; j++) {
             printf("*");
         }
         printf("\n");
