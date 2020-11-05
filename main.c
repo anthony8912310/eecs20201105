@@ -1,130 +1,131 @@
 //
 //  main.c
-//  test 9
+//  work02
 //
 //  Created by admin on 2020/11/5.
 //  Copyright © 2020 admin. All rights reserved.
 //
 
 #include <stdio.h>
-int a;
-int test(int num);
+void a(int i);
+void b(int i);
+int test;
 int main(int argc, const char * argv[]) {
     int n;
     scanf("%d",&n);
-    if (n>=10&&n<20)
-    {
-        if (n==10) {
-            printf("ten");
-        }else if (n==11) {
-            printf("eleven");
-        }else if (n==12) {
-            printf("twelve");
-        }else if (n==13) {
-            printf("thirteen");
-        }else if (n==14) {
-            printf("fourteen");
-        }else if (n==15) {
-            printf("fifteen");
-        }else if (n==16) {
-            printf("sixteen");
-        }else if (n==17) {
-            printf("seventeen");
-        }else if (n==18) {
-            printf("eighteen");
-        }else if (n==19) {
-            printf("ninety");
-        }
-    }else if (n>=20&&n<30)
-    {
-        printf("twenty");
-        if (n==20) {
-            
-        }else{
-            printf("-");
-        a=20;
-        test(n);
-        }
-    }else if (n>=30&&n<40)
-    {
-        printf("thirty");
-        if (n==30) {
-            
-        }else{
-            printf("-");
-        a=30;
-        test(n);
-        }
-    }else if (n>=40&&n<50)
-    {
-        printf("forty");
-        if (n==40) {
-            
-        }else{
-            printf("-");
-        a=40;
-        test(n);
-        }
-    }else if (n>=50&&n<60)
-    {
-        printf("fifty");
-        if (n==50) {
-            
-        }else{
-            printf("-");
-        a=50;
-        test(n);
-        }
-    }else if (n>=60&&n<70)
-    {
-        printf("sixty");
-        if (n==70) {
-            
-        }else{
-            printf("-");
-        a=60;
-        test(n);
-        }
-    }else if (n>=70&&n<80)
-    {
-        printf("seventy");
-        if (n==70) {
-            
-        }else{
-            printf("-");
-        a=70;
-        test(n);
-        }
-    }else if (n>=80&&n<90)
-    {
-        printf("eighty");
-        if (n==20) {
-            
-        }else{
-            printf("-");
-        a=80;
-        test(n);
-        }
-    }else if (n>=90&&n<100)
-    {
-        printf("ninety");
-        if (n==20) {
-            
-        }else{
-            printf("-");
-        a=90;
-        test(n);
-        }
-    }else
-    {
+    if (n<10||n>=100) {
         printf("invalid");
+    }
+    else
+    {
+        a(n);
+        b(n);
     }
     printf("\n");
     return 0;
 }
-int test(int num)
+void a(int i)
 {
-    int i=num-a;
+       if (i>=10&&i<20)
+     {
+         if (i==10) {
+             printf("ten");
+         }else if (i==11) {
+             printf("eleven");
+         }else if (i==12) {
+             printf("twelve");
+         }else if (i==13) {
+             printf("thirteen");
+         }else if (i==14) {
+             printf("fourteen");
+         }else if (i==15) {
+             printf("fifteen");
+         }else if (i==16) {
+             printf("sixteen");
+         }else if (i==17) {
+             printf("seventeen");
+         }else if (i==18) {
+             printf("eighteen");
+         }else if (i==19) {
+             printf("ninety");
+         }
+     }else if (i>=20&&i<30)
+     {
+         printf("twenty");
+         if (i==20) {
+             
+         }else{
+             printf("-");
+         test=20;
+         }
+     }else if (i>=30&&i<40)
+     {
+         printf("thirty");
+         if (i==30) {
+             
+         }else{
+             printf("-");
+         test=30;
+         }
+     }else if (i>=40&&i<50)
+     {
+         printf("forty");
+         if (i==40) {
+             
+         }else{
+             printf("-");
+         test=40;
+         }
+     }else if (i>=50&&i<60)
+     {
+         printf("fifty");
+         if (i==50) {
+             
+         }else{
+             printf("-");
+         test=50;
+         }
+     }else if (i>=60&&i<70)
+     {
+         printf("sixty");
+         if (i==70) {
+             
+         }else{
+             printf("-");
+         test=60;
+         }
+     }else if (i>=70&&i<80)
+     {
+         printf("seventy");
+         if (i==70) {
+             
+         }else{
+             printf("-");
+         test=70;
+         }
+     }else if (i>=80&&i<90)
+     {
+         printf("eighty");
+         if (i==20) {
+             
+         }else{
+             printf("-");
+         test=80;
+         }
+     }else if (i>=90&&i<100)
+     {
+         printf("ninety");
+         if (i==20) {
+             
+         }else{
+             printf("-");
+         test=90;
+         }
+     }
+}
+void b(int i)
+{
+    i=i-test;
     if (i==1) {
         printf("one");
     }else if (i==2)
@@ -159,5 +160,4 @@ int test(int num)
     {
         printf("nine");
     }
-    return i;
 }
